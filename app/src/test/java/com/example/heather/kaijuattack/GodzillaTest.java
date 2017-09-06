@@ -16,11 +16,13 @@ import com.example.heather.kaijuattack.*;
 public class GodzillaTest {
     Godzilla godzilla;
     Tank tank;
+    TroopCarrier troopCarrier;
 
     @Before
     public void before() {
         godzilla = new Godzilla("Godzilla", 100, 14.0);
         tank = new Tank("Tank", 100.0);
+        troopCarrier = new TroopCarrier("Troop Carrier", 100);
     }
 
     @Test
@@ -47,6 +49,12 @@ public class GodzillaTest {
     public void canDamageTank() {
         godzilla.attack(tank);
         assertEquals(86, tank.getHealthValue(), 0.01 );
+    }
+
+    @Test
+    public void canDamageTroopCarrier() {
+        godzilla.attack(troopCarrier);
+        assertEquals(86, troopCarrier.getHealthValue(), 0.01 );
     }
 
     @Test

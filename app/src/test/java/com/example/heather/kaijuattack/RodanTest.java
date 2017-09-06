@@ -11,10 +11,14 @@ import static junit.framework.Assert.assertEquals;
 
 public class RodanTest {
     Rodan rodan;
+    Tank tank;
+    TroopCarrier troopCarrier;
 
     @Before
     public void before() {
         rodan = new Rodan("Rodan", 100, 8.5);
+        tank = new Tank("Tank", 100);
+        troopCarrier = new TroopCarrier("Troop Carrier", 100);
     }
 
     @Test
@@ -35,6 +39,18 @@ public class RodanTest {
     @Test
     public void canRoar() {
         assertEquals("ROOOAAARRR", rodan.roar() );
+    }
+
+    @Test
+    public void canDamageTank() {
+        rodan.attack(tank);
+        assertEquals(91.5, tank.getHealthValue(), 0.01 );
+    }
+
+    @Test
+    public void canDamageTroopCarrier() {
+        rodan.attack(troopCarrier);
+        assertEquals(91.5, troopCarrier.getHealthValue(), 0.01 );
     }
 
     @Test

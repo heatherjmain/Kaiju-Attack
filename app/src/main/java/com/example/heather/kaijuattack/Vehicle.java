@@ -4,7 +4,7 @@ package com.example.heather.kaijuattack;
  * Created by heather on 06/09/2017.
  */
 
-public abstract class Vehicle {
+public abstract class Vehicle implements CanAttack {
     String type;
     double healthValue;
 
@@ -21,7 +21,9 @@ public abstract class Vehicle {
         return healthValue;
     }
 
-    public void damageDone(double damage) {
+    public void takeDamage(double damage) {
         this.healthValue -= damage;
     }
+
+
 }

@@ -4,7 +4,7 @@ package com.example.heather.kaijuattack;
  * Created by heather on 06/09/2017.
  */
 
-public abstract class Kaiju {
+public abstract class Kaiju implements Damageable {
     String name;
     double healthValue;
     double attackValue;
@@ -32,8 +32,8 @@ public abstract class Kaiju {
         return "ROOOAAARRR";
     }
 
-    public void attack(Vehicle target) {
-        target.damageDone(attackValue);
+    public void attack(Damageable target) {
+        target.takeDamage(attackValue);
     }
 
     public abstract String move();

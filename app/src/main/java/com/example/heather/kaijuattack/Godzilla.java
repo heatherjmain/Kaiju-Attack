@@ -12,6 +12,11 @@ public class Godzilla extends Kaiju {
     public String move() {
         return "STOMP STOMP STOMP";
     }
+
+    @Override
+    public void takeDamage(double damage) {
+
+    }
 }
 
 
