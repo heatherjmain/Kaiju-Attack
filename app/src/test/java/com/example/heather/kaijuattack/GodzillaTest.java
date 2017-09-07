@@ -21,8 +21,8 @@ public class GodzillaTest {
     @Before
     public void before() {
         godzilla = new Godzilla("Godzilla", 100, 14.0);
-        tank = new Tank("Tank", 100.0);
-        troopCarrier = new TroopCarrier("Troop Carrier", 100);
+        tank = new Tank("Tank", 100.0, 25.0);
+        troopCarrier = new TroopCarrier("Troop Carrier", 100, 15.0);
     }
 
     @Test

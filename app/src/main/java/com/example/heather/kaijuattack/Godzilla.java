@@ -13,10 +13,6 @@ public class Godzilla extends Kaiju {
         return "STOMP STOMP STOMP";
     }
 
-    @Override
-    public void takeDamage(double damage) {
-
-    }
 }
 
 

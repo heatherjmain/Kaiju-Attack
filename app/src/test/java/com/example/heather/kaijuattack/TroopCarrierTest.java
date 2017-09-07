@@ -14,7 +14,7 @@ public class TroopCarrierTest {
 
     @Before
     public void before() {
-        troopCarrier = new TroopCarrier("Troop Carrier", 100.0);
+        troopCarrier = new TroopCarrier("Troop Carrier", 100.0, 15.0);
     }
 
     @Test

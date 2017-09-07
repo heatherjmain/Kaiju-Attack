@@ -5,5 +5,5 @@ package com.example.heather.kaijuattack;
  */
 
 public interface CanAttack {
-    void attack(double attackValue);
+    void attack(Damageable target);
 }

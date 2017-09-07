@@ -17,8 +17,8 @@ public class RodanTest {
     @Before
     public void before() {
         rodan = new Rodan("Rodan", 100, 8.5);
-        tank = new Tank("Tank", 100);
-        troopCarrier = new TroopCarrier("Troop Carrier", 100);
+        tank = new Tank("Tank", 100.0, 25.0);
+        troopCarrier = new TroopCarrier("Troop Carrier", 100.0, 15.0);
     }
 
     @Test

@@ -13,10 +13,8 @@ public class Rodan extends Kaiju {
         return "CRUNCH CRUNCH CRUNCH";
     }
 
-    @Override
-    public void takeDamage(double damage) {
 
-    }
+
 }
 
 
